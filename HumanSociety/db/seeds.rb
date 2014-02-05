@@ -5,16 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+require 'pets'
 Pets.delete_all
 # . . .
 Pets.create(
-	species: 'cat',
-	name: 'Fluffy',
-	description: %{<p>
+	:species => 'cat',
+	:name => 'Fluffy',
+	:description => %{<p>
 	Cats are fluffy animals that eat birds
 	</p>},
-	image_url: '/images/turtle.jpg',
-	age: 49.0
+	:image_url => '/images/turtle.jpg',
+	:age => 49.0
 )
 # . . .
