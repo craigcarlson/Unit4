@@ -18,7 +18,7 @@
       <tr>
         <td><%= pet.name %></td>
         <td><%= pet.description %></td>
-        <td><%= pet.image_url %></td>
+        <td id="slothImage"><%= image_tag(pet.image_url, :class => 'list_image') %></td>
         <td><%= pet.age %></td>
         <td><%= link_to 'Show', pet %></td>
         <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
